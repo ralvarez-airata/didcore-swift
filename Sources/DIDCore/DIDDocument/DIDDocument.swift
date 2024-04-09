@@ -32,12 +32,12 @@ public struct DIDDocument {
         public let id: String
         public let type: String
         // Its not ideal that the service endpoint is a AnyCodable but since by the specification we cannot know the structure of the serviceEndpoint structure this is the best way.
-        public let serviceEndpoint: AnyCodable
+        public let serviceEndpoint: String
         
         public init(
             id: String,
             type: String,
-            serviceEndpoint: AnyCodable
+            serviceEndpoint: String
         ) {
             self.id = id
             self.type = type
